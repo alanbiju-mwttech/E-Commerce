@@ -1,0 +1,13 @@
+.carousel{
+    margin: 16px 8px;
+}
+
+.carousel-indicators{
+    display: none !important;
+}
+
+@media (max-width: 770px) {
+    .carousel{
+        margin: 8px 4px;
+    }
+}
