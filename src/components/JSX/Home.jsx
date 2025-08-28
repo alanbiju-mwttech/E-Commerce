@@ -3,6 +3,9 @@ import Carousel from 'react-bootstrap/Carousel';
 import Footer from './Footer';
 
 const Home = ({products}) => {
+
+    console.log(products)
+
     return (
         <>
             <div className="carousel">

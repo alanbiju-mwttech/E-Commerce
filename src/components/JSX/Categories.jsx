@@ -3,14 +3,14 @@ import Footer from './Footer';
 
 const Categories = (products) => {
 
-    console.log(products)
+    console.log(typeof(products))
 
     return(
         <>
-            <div className="product-list">
-                { products.length > 0 ?(
-                    products.map(product => (
-                        <div className="product-card" key={product.id}>
+            <div className="products-list">
+                { products.products.length > 0 ?(
+                    products.products.map(product => (
+                        <div className="products-card" key={product.id}>
                             <img src={product.image} alt={product.name} />
                             <p className='fw-bolder m-0'>{product.name}</p>
                             <p className='m-0 fw-bold text-danger'>₹{product.price}</p>

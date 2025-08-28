@@ -13,8 +13,8 @@ const Footer = () =>{
                         108, PQRST ABC,<br/>
                         Kochi,<br/>
                         Kerala - 682001. <br/>
-                        <span class="link">www.store.com </span><br/>
-                        <span class="link">support@store.com </span></p>
+                        <span className="link">www.store.com </span><br/>
+                        <span className="link">support@store.com </span></p>
                     </Col>
                     <Col md={4}>
                         <h5>Quick Links</h5>
