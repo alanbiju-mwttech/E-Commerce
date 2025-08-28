@@ -1,0 +1,10 @@
+Footer{
+    background-color: rgb(18, 29, 46);
+    color: white;
+}
+
+.social img{
+    filter: invert();
+    width: 25px;
+    margin-left: 10px;
+}
