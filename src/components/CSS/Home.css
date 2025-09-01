@@ -4,6 +4,7 @@ body{
 
 .carousel {
     margin: 16px 8px;
+    margin-top: 86.6px;
 }
 
 .carousel-indicators {
@@ -43,7 +44,6 @@ body{
 
 .product-card img {
     width: 150px;
-    /*height: 180px; */
     object-fit: fill;
     border-radius: 7px;
     aspect-ratio: 800/1067;
@@ -51,12 +51,13 @@ body{
 
 .product-card img:hover{
     transform: scale(1.05);
-    transition: scale .5 ease;
+    transition: scale .7 ease;
 }
 
 @media (max-width: 770px) {
     .carousel {
         margin: 8px 4px;
+        margin-top: 79px;
     }
 
     .products{
@@ -64,7 +65,7 @@ body{
     }
 
     .product-list img{
-         width: 120px;
-         /*height: 150px; */
+        width: 120px;
+        /*height: 150px; */
     }
 }

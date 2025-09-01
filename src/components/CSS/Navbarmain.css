@@ -40,6 +40,10 @@
     transition: right .3s cubic-bezier(0.175, 0.885, 0.32, 1.095);
 }
 
+.full-width Nav.Link {
+    color: rgb(177, 177, 177);
+}
+
 .active{
     right: 0 !important;
 }

@@ -4,10 +4,10 @@
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
+  margin-top: 70px;
 }
 
 .products-card {
-  /* width: 200px; */
   padding: 15px;
   border: 1px solid #ccc;
   border-radius: 12px;

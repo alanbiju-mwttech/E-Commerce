@@ -14,11 +14,11 @@ const Navbarmain = () => {
 
     return(
         <>
-            <div style={{ background: "rgb(247, 244, 241)" }} className="">
-                <Navbar style={{ background: "rgb(18, 29, 46)", height:'65px'}}>
+            <div style={{ background: "rgb(247, 244, 241)" }} className="fixed-top">
+                <Navbar style={{ background: "rgb(18, 29, 46)", height:'70px'}}>
                     <Container>
                         <Navbar.Brand className="m-0">
-                            <h2 className="m-0 text-light">LOGO</h2>
+                            <h4 className="m-0 text-light fw-bolder">LOGO</h4>
                         </Navbar.Brand>
                         <Nav className="ps-5 full-width">
                             <Nav.Link className="text-light fw-semibold ps-4" onClick={() => navigate('/')}>Home</Nav.Link>
