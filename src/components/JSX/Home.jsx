@@ -2,7 +2,7 @@ import '../CSS/Home.css'
 import Carousel from 'react-bootstrap/Carousel';
 import Footer from './Footer';
 
-const Home = ({products}) => {
+const Home = (products) => {
 
     console.log(products)
 
@@ -20,8 +20,8 @@ const Home = ({products}) => {
             </div>
             <div className="products">
                 <h4 className=''>Top Products</h4>
-                <div className='product-list'>
-                    {products.map(product => (
+                <div className='home-product-list'>
+                    {products.products.map(product => (
                         <div className="product-card" key={product.id}>
                             <img src={product.image} alt={product.name} />
                             <p className='fw-bolder m-0'>{product.name}</p>

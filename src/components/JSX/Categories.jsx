@@ -3,8 +3,6 @@ import Footer from './Footer';
 
 const Categories = (products) => {
 
-    console.log(typeof(products))
-
     return(
         <>
             <div className="products-list">

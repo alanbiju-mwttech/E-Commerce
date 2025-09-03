@@ -8,9 +8,8 @@ const Footer = () =>{
                 <Container>
                 <Row>
                     <Col md={4}>
-                        <h5>Company Name</h5>
-                        <p>XYZ Exports<br/>
-                        108, PQRST ABC,<br/>
+                        <h5>XYZ Exports</h5>
+                        <p>108, PQRST ABC,<br/>
                         Kochi,<br/>
                         Kerala - 682001. <br/>
                         <span className="link">www.store.com </span><br/>
@@ -34,7 +33,7 @@ const Footer = () =>{
                     </Col>
                 </Row>
                 <hr />
-                <p className="text-center mb-0">&copy; {new Date().getFullYear()} Company Name. All rights reserved.</p>
+                <p className="text-center mb-0">&copy; {new Date().getFullYear()} XYZ Exports. All rights reserved.</p>
                 </Container>
             </footer>
         </>

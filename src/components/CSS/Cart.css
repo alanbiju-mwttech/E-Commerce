@@ -1,0 +1,145 @@
+.cart-page{
+    margin-top: 70.6px;
+    display: flex;
+    flex-direction: row;
+}
+
+.cart-page .products{
+    background-color: #ffffff;
+    margin: 20px;
+    padding: 20px 20px 10px 20px;
+    width: 60%;
+    border-radius: 8px;
+    border: rgb(228, 228, 228) solid 0.1px;
+}
+
+.products hr{
+    margin: .2rem 0;
+}
+
+.product-list{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-left: 0px;
+}
+
+.each-products{
+    display: flex;
+    flex-direction: row;
+}
+
+.each-products img{
+    width: 165px;
+}
+
+.product-details{
+    margin-left: 20px;
+}
+
+.product-details .name{
+    font-size: 35px;
+}
+
+.product-details .price{
+    font-size: 25px;
+}
+
+.color-select{
+    display: flex;
+    margin-top: 10px;
+}
+
+.color {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #121f36;
+    transition: all .05s ease-in;
+    margin-left: 10px;
+}
+
+.color:hover {
+    transform: scale(1.05);
+}
+
+.incrementor{
+    display: flex;
+    gap: 10px;
+    align-self: center;
+}
+
+.incrementor button{
+    background-color: rgb(226, 226, 226);
+    border: #c2c2c2 solid 1px;
+    border-radius: 10px;
+    width: 35px;
+    height: 35px;
+}
+
+.number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.remove{
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.cart-page .price-section{
+    width: 35%;
+    background-color: #ffffff;
+    margin: 20px;
+    padding: 20px 20px 10px 20px;
+    border-radius: 8px;
+    border: rgb(228, 228, 228) solid 0.1px;
+    flex: 1;
+    height: auto;
+    min-height: 100px;
+    position: fixed;
+    right: 0;
+}
+
+.price-section hr{
+    margin: .7rem 0;
+}
+
+.price-details p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.price-row.total {
+    font-weight: 700;
+    border-top: 2px dotted #ccc;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+@media (max-width: 770px) {
+    .cart-page{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cart-page .products,.cart-page .price-section{
+        width: 96%;
+        position: static;    
+        margin: auto;
+        margin-top: 15px;
+    }
+
+    .cart-page .products{
+        overflow-y: auto;
+    }
+}
