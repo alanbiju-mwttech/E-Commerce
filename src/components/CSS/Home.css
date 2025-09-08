@@ -4,7 +4,7 @@ body{
 
 .carousel {
     margin: 16px 8px;
-    margin-top: 86.6px;
+    margin-top: 90px;
 }
 
 .carousel-indicators {
@@ -57,7 +57,7 @@ body{
 @media (max-width: 770px) {
     .carousel {
         margin: 8px 4px;
-        margin-top: 79px;
+        margin-top: 80px;
     }
 
     .products{

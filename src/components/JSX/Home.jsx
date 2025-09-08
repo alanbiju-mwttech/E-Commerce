@@ -1,6 +1,7 @@
 import '../CSS/Home.css'
 import Carousel from 'react-bootstrap/Carousel';
 import Footer from './Footer';
+import Navbarmain from './Navbarmain.jsx';
 
 const Home = (products) => {
 
@@ -8,6 +9,7 @@ const Home = (products) => {
 
     return (
         <>
+        <Navbarmain />
             <div className="carousel">
                 <Carousel>
                     <Carousel.Item interval={2000}>

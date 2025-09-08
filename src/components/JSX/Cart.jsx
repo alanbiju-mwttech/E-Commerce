@@ -1,8 +1,10 @@
 import '../CSS/Cart.css'
+import Navbarmain from './Navbarmain.jsx';
 
 const Cart = (products) =>{
     return(
         <>
+        <Navbarmain />
             <div className="cart-page">
                 <div className="products">
                     <h3>My Cart</h3>

@@ -1,10 +1,12 @@
 import '../CSS/Categories.css'
 import Footer from './Footer';
+import Navbarmain from './Navbarmain.jsx';
 
 const Categories = (products) => {
 
     return(
         <>
+        <Navbarmain />
             <div className="products-list">
                 { products.products.length > 0 ?(
                     products.products.map(product => (
