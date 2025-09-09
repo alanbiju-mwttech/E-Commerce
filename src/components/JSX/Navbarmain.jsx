@@ -3,14 +3,26 @@ import { BsBagFill, BsPersonCircle } from "react-icons/bs";
 import '../CSS/Navbarmain.css'
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
+import { useContext } from "react";
+import { UserContext } from "./UserProvider";
 
 
 const Navbarmain = () => {
     
     const [extend, setExtended] = useState(false)
-    const [isLoggedIn, setisLoggedIn] = useState(false)
+    const {isLoggedIn, setLoggedin} = useContext(UserContext)
+    console.log(isLoggedIn)
 
     const navigate = useNavigate();
+
+    const login = () =>{
+        if(isLoggedIn){
+            setLoggedin(false)
+        }
+        else{
+            navigate('/login')
+        }
+    }
 
     return(
         <>
@@ -28,7 +40,7 @@ const Navbarmain = () => {
                             <Nav.Link className="text-light fw-semibold ps-4 pb-2 " >
                                 <BsBagFill className="me-2 text-light" style={{ fontSize: '1.5rem'}} onClick={() => navigate('/cart')}/>
                             </Nav.Link>
-                            <Button className="ms-2" onClick={() => navigate('/login')}>{isLoggedIn? 'Logout':'Login'}</Button>
+                            <Button className="ms-2" onClick={login}>{isLoggedIn? 'Logout':'Login'}</Button>
                             <Nav.Link className="text-light fw-semibold ps-4 pb-2 " >
                                 <BsPersonCircle className="me-2 text-light" style={{ fontSize: '1.5rem'}} onClick={() => navigate('/profile')}/>
                             </Nav.Link>
@@ -49,7 +61,7 @@ const Navbarmain = () => {
                             <Nav.Link className="text-light fw-semibold" >
                                 <BsBagFill className="text-light" style={{ fontSize: '1.5rem'}} onClick={() => navigate('/cart')}/>
                             </Nav.Link>
-                            <Button onClick={() => navigate('/login')}>{isLoggedIn? 'Logout':'Login' }</Button>
+                            <Button onClick={login}>{isLoggedIn? 'Logout':'Login' }</Button>
                             <Nav.Link className="text-light fw-semibold">
                                 <BsPersonCircle className="text-light" style={{ fontSize: '2.5rem'}} onClick={() => navigate('/profile')}/>
                             </Nav.Link>

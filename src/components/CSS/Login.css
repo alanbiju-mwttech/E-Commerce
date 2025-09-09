@@ -55,6 +55,11 @@
     height: 35px;
 }
 
+.message{
+    font-size: small;
+    color: red;
+}
+
 @media (max-width : 770px) {
     .login{
         width: 70%;

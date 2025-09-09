@@ -9,10 +9,12 @@ import Categories from './components/JSX/Categories.jsx';
 import Cart from './components/JSX/Cart.jsx';
 import cart_products from './products/Cart.js'
 import Login from './components/JSX/Login.jsx';
+import { UserProvider } from './components/JSX/UserProvider.jsx';
 
 function App() {
     return (
         <>
+        <UserProvider>
             <Router>    
                 <Routes>
                     <Route path='/' element={<Home products={products} />} />
@@ -23,6 +25,7 @@ function App() {
                     <Route path='/login' element={<Login/>} />
                 </Routes>
             </Router>
+        </UserProvider>
         </>
     );
 }

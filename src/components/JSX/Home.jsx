@@ -5,8 +5,6 @@ import Navbarmain from './Navbarmain.jsx';
 
 const Home = (products) => {
 
-    console.log(products)
-
     return (
         <>
         <Navbarmain />
